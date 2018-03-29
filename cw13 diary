@@ -78,7 +78,11 @@
 BV_new=current_stock_price(P)=BV_now*(1+g)^N_years
 so N_years = (logP-logBV_now)/log(1+g)= logPB/log(1+g)
 
-2。
+2.4 用市盈率来看， 也就是通过每股盈利及每年盈利增长的情况下来看多长时间可以回本
+BV_new=current_stock_price(P)= BV_now + EPS*(1+g)^N_years
+N_years = log((P-BV_now)/EPS)/log(1+g) < log(P/EPS)/log(1+g) = log(PE)/log(1+g)
 
-这样，用每股净资产来代替账面价值，则PB就是大家理解的市净率，即：PB（市净率）=股价/每股净资4
-这样，用每股净资产来代替账面价值，则PB就是大家理解的市净率，即：PB（市净率）=股价/每股净资
+
+
+
+
