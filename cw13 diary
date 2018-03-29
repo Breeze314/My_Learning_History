@@ -104,7 +104,7 @@ delta_P/P = (1+g)^N_years-1 + delta_PE*EPS/P*(1+g)^N_years
 = (1+delta_PE/PE)*(1+g)^N_years -1
 
 
-
+在N年后股票增值比例为 delta_P的情况下， 可计算复合每年收益率为： 10^(1og （delta_P+1)/N) -1
 
 
 
