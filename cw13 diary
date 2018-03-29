@@ -73,9 +73,12 @@
 这里， 又可以用不同的计算方法来评估
 2.1 用PB衡量
 2.2 用PE衡量
-2.3 用净资产增长周期来看，
+2.3 用净资产增长周期来看，(用市净率看）
 假定N_years后可以净资产可以到达目前股价, 净资产增长率是g. 
 BV_new=current_stock_price(P)=BV_now*(1+g)^N_years
-so N_years = (logP-logBV_now)/log(1+g)
+so N_years = (logP-logBV_now)/log(1+g)= logPB/log(1+g)
 
-2
+2。
+
+这样，用每股净资产来代替账面价值，则PB就是大家理解的市净率，即：PB（市净率）=股价/每股净资4
+这样，用每股净资产来代替账面价值，则PB就是大家理解的市净率，即：PB（市净率）=股价/每股净资
