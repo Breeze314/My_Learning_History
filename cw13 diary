@@ -75,12 +75,34 @@
 2.2 用PE衡量
 2.3 用净资产增长周期来看，(用市净率看）
 假定N_years后可以净资产可以到达目前股价, 净资产增长率是g. 
-BV_new=current_stock_price(P)=BV_now*(1+g)^N_years
-so N_years = (logP-logBV_now)/log(1+g)= logPB/log(1+g)
+BV_new=current_stock_price(P)=BV_now*(1+g)^N_years_1
+so N_years_1 = (logP-logBV_now)/log(1+g)= logPB/log(1+g)
 
 2.4 用市盈率来看， 也就是通过每股盈利及每年盈利增长的情况下来看多长时间可以回本
-BV_new=current_stock_price(P)= BV_now + EPS*(1+g)^N_years
-N_years = log((P-BV_now)/EPS)/log(1+g) < log(P/EPS)/log(1+g) = log(PE)/log(1+g)
+BV_new=current_stock_price(P)= BV_now + EPS*(1+g)^N_years_2
+N_years_2 = log((P-BV_now)/EPS)/log(1+g) < log(P/EPS)/log(1+g) = log(PE)/log(1+g)
+
+在上面的计算中没有考虑股价实际上是波动的， 而且在较高增长率的驱动下， 股份也是大概率事件上涨。 可以再从两个角度来看新的股价的估计值： 
+
+2.5 假设市净率维持不变， 那么在N_years_1或者N_years_2时，新的股价就是BV_new*PB, 那么股价波动带来的收益部分就是： 
+delta_P = BV_new*PB - P 
+就是 P*PB-P= P*(PB-1), 相对收益率就是： (PB-1)*100
+
+2.6, 假设市盈率维持不变， 那么在N_years_1或者N_years_2时，新的股价就是EPS*(1+g)^N_year*PE, 那么股价波动带来的收益部分就是： 
+delta_P =  EPS*(1+g)^N_year*PE - P = P*(1+g)^N_year - P = P*( (1+g)^N_year -1)
+相对收益率就是： ((1+g)^N_year-1)*100
+
+而事实上， 对于一个稳定高增长的公司， 其股价的PB及PE都会增大， 从而会带来更高的股价溢价部分。 
+那么2.5就可以修正为相对收益是： (PB_new-1)*100, 相对2.5的额外部分是 (PB_new-PB)*100%
+
+假设新的PE_new = PE + delta_PE, 2.6 delta_P 就查以修正为: 
+EPS*(1+g)^N_year*PE_new - P = P*(1+g)^N_year - P + delta_PE_*EPS*(1+g)^N_year= P*( (1+g)^N_year -1) + delta_PE*EPS*(1+g)^N_Years
+相对收益就是 
+delta_P/P = (1+g)^N_years-1 + delta_PE*EPS/P*(1+g)^N_years 
+=(1+g)^N_years-1 + delta_PE*EPS/(EPS*PE)*(1+g)^N_years 
+=(1+g)^N_years-1 + delta_PE/PE*(1+g)^N_years 
+= (1+delta_PE/PE)*(1+g)^N_years -1
+
 
 
 
