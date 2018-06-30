@@ -56,7 +56,8 @@
 1. 查理芒格语录
 2. 如下：
 
-![test]（https://github.com/Breeze314/pics/blob/master/书单.jpg）
+![image]（https://github.com/Breeze314/pics/blob/master/书单.jpg?raw=true)
+
 3. Kindle 2018-07-01时的书目
 
 
