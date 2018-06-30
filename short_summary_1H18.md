@@ -55,7 +55,7 @@
 下一阶段读书清单：
 1. 查理芒格语录
 2. 如下：
-https://github.com/Breeze314/pics/blob/master/书单.jpg
+![test]（https://github.com/Breeze314/pics/blob/master/书单.jpg）
 3. Kindle 2018-07-01时的书目
 
 
